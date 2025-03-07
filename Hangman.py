@@ -15,7 +15,15 @@ def load_josn(file_path):
     
 list_of_words = load_josn("words.json")   
 
+
 def game_started():
+    category = random.choice(list(list_of_words.keys()))
+    
+    word = random.choice(list_of_words[category])
+    
+    print(f"\nYour word is from the category: '{category}' ")
+    
+    
     
      
 
@@ -26,7 +34,8 @@ def start_game():
         game_started()
         
     elif intro == 'no' or intro == 'n':
+        print("Existing game...")
         quit()  
         
     
-    
+start_game()    
