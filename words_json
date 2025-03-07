@@ -1,0 +1,10 @@
+{
+  "people_name": ["alice", "john", "emma", "michael", "sophia", "daniel", "olivia", "david", "james", "linda", "robert", "patricia", "charles", "barbara", "william", "jennifer"],
+  "action": ["run", "jump", "swim", "dance", "sing", "write", "read", "climb", "cook", "paint", "drive", "laugh", "talk", "listen", "think", "shout"],
+  "animals": ["dog", "cat", "lion", "tiger", "elephant", "giraffe", "rabbit", "zebra", "monkey", "panda", "dolphin", "kangaroo", "eagle", "fox", "bear", "wolf"],
+  "countries": ["ghana", "canada", "brazil", "france", "india", "china", "egypt", "germany", "italy", "mexico", "japan", "argentina", "south africa", "russia", "australia", "spain"],
+  "trees": ["oak", "pine", "maple", "baobab", "cedar", "willow", "birch", "mahogany", "cherry", "cypress", "mango", "avocado", "acacia", "palm", "sequoia", "elm"],
+  "places": ["school", "hospital", "market", "beach", "park", "stadium", "museum", "library", "airport", "restaurant", "zoo", "cinema", "temple", "mosque", "church", "bridge"],
+  "city": ["accra", "london", "paris", "tokyo", "nairobi", "dubai", "berlin", "sydney", "madrid", "toronto", "new york", "los angeles", "cape town", "bangkok", "rome", "mumbai"],
+  "food": ["pizza", "rice", "bread", "apple", "banana", "pasta", "chicken", "fish", "cheese", "carrot", "strawberry", "watermelon", "beef", "salad", "sandwich", "soup"]
+}
