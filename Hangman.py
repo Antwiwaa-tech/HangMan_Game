@@ -23,6 +23,16 @@ def game_started():
     
     print(f"\nYour word is from the category: '{category}' ")
     
+
+    guess = input("Guess the word \n >>> ")
+    attempts = 0
+    attempts += 1
+    while attempts != 5: 
+        if guess[0:] not in word[0:]:
+            print('Wrong\u274C\u274C')
+        else:
+            print('Correct\u2705\u2705')    
+        
     
     
      
