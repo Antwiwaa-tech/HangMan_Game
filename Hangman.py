@@ -50,6 +50,10 @@ def start_game():
 
     while attempts < 8: # The programs allows a maximum of 7 incorrect to terminate
         guess = input("\nEnter a letter: ").strip().lower()
+        
+        if guess == 'quit':
+                print("Exiting game...")
+                return
 
         if not guess or len(guess) != 1 or not guess.isalpha():
             print("Invalid input! Please enter a single letter.")
@@ -68,10 +72,16 @@ def start_game():
 
         # Check if player has guessed the full word
         if all(letter in correct_guesses for letter in word):
-            print(f"\n\U0001F389 Congratulations! You guessed the word: {word} \U0001F44D")  
+            print(f"\n\U0001F389 Congratulations! You guessed the word: {word} \U0001F44D")
+        
             return
+        
+       
 
-    print(f"\nGame Over! The correct word was: {word} \U0001F61E")  
+    print(f"\nGame Over! The correct word was: {word} \U0001F61E") 
+    print("Play(1) or Exit(0)")
+    
+     
     
     
 
