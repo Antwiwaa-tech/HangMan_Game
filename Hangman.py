@@ -2,7 +2,7 @@ import random
 import json
 
 def load_json(file_path):
-    """Load list of words for the guessing game."""
+    """Load list of words from json for the guessing game."""
     try:
         with open(file_path, "r") as file:
             data = json.load(file)
@@ -71,10 +71,12 @@ def game_started():
 
     print(f"\nGame Over! The correct word was: {word} \U0001F61E")  # 😞
 
+
+# Main menu to proceed with the program
 def start_game():
     """Ask the player if they want to start the game."""
     while True:
-        intro = input("Complete the Word \U0001F603. Are you Ready? (yes/no): ").strip().lower()  # 😃
+        intro = input("Complete the Word \U0001F603. Are you Ready?? (yes/no): ").strip().lower()  # 😃
 
         if intro in ['yes', 'y']:
             game_started()
