@@ -19,8 +19,9 @@ def load_json(file_path):
 
 list_of_words = load_json("words.json")
 
-def game_started():
+def start_game():
     """Start the word guessing game."""
+    
     if not list_of_words:  # Check if words loaded successfully
         print("Word list is empty or invalid. Exiting game...")
         return
@@ -46,7 +47,7 @@ def game_started():
     attempts = 0
     correct_guesses = set()
 
-    while attempts < 8:
+    while attempts < 8: # The programs allows a maximum of 7 incorrect to terminate
         guess = input("\nEnter a letter: ").strip().lower()
 
         if not guess or len(guess) != 1 or not guess.isalpha():
@@ -59,27 +60,27 @@ def game_started():
 
         if guess in word:
             correct_guesses.add(guess)
-            print("Correct \u2705\u2705")  # ✅✅
+            print("Correct \u2705\u2705")  
         else:
             attempts += 1
-            print(f"Wrong \u274C\u274C | Attempts left: {8 - attempts}")  # ❌❌
+            print(f"Wrong \u274C\u274C | Attempts left: {8 - attempts}")  
 
         # Check if player has guessed the full word
         if all(letter in correct_guesses for letter in word):
-            print(f"\n\U0001F389 Congratulations! You guessed the word: {word} \U0001F44D")  # 🎉👍
+            print(f"\n\U0001F389 Congratulations! You guessed the word: {word} \U0001F44D")  
             return
 
-    print(f"\nGame Over! The correct word was: {word} \U0001F61E")  # 😞
-
+    print(f"\nGame Over! The correct word was: {word} \U0001F61E")  
+    
 
 # Main menu to proceed with the program
-def start_game():
+def hangman_game():
     """Ask the player if they want to start the game."""
     while True:
-        intro = input("Complete the Word \U0001F603. Are you Ready?? (yes/no): ").strip().lower()  # 😃
+        intro = input("Complete the Word \U0001F603. Are you Ready?? (yes/no): ").strip().lower()  
 
         if intro in ['yes', 'y']:
-            game_started()
+            start_game()
             break
         elif intro in ['no', 'n']:
             print("Exiting game...")
@@ -88,4 +89,4 @@ def start_game():
             print("Invalid input! Please enter 'yes' or 'no'.")
 
 if __name__ == '__main__':
-    start_game()
+    hangman_game()
