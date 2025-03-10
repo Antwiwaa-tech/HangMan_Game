@@ -19,6 +19,7 @@ def load_json(file_path):
 
 list_of_words = load_json("words.json")
 
+
 def start_game():
     """Start the word guessing game."""
     
@@ -72,6 +73,7 @@ def start_game():
 
     print(f"\nGame Over! The correct word was: {word} \U0001F61E")  
     
+    
 
 # Main menu to proceed with the program
 def hangman_game():
@@ -87,6 +89,7 @@ def hangman_game():
             break
         else:
             print("Invalid input! Please enter 'yes' or 'no'.")
+
 
 if __name__ == '__main__':
     hangman_game()
