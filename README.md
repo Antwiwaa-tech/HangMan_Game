@@ -1,1 +1,2 @@
 # HangMan_Game
+This is a game that allows the user to guess a word per alphabet. It uses a json to store key value pairs of a category with it's list of words that can be found in that particluar category. The programs runs until the gamer enters quit or q to exist the game
