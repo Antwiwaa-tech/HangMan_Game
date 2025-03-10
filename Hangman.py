@@ -37,20 +37,20 @@ def game_started():
 
         if guess in word:
             correct_guesses.add(guess)
-            print('Correct ✅✅')
+            print('Correct \u2705"\u2705')
         else:
             attempts += 1
-            print(f'Wrong ❌❌ | Attempts left: {5 - attempts}')
+            print(f'Wrong \u274C\u274C | Attempts left: {5 - attempts}')
 
         # Check if the player has guessed all letters in the word
         if all(letter in correct_guesses for letter in word):
-            print(f"Congratulations! You guessed the word: {word} 🎉")
+            print(f"Congratulations! You guessed the word: {word} \U0001F389\U0001F44D")
             return
 
-    print(f"Game Over! The correct word was: {word} 😞")
+    print(f"Game Over! The correct word was: {word} \U0001F61E")
 
 def start_game():
-    intro = input("Complete the Word 😃. Are you Ready? (yes/no): ").lower()
+    intro = input("Complete the Word \U0001F603. Are you Ready? (yes/no): ").lower()
     
     if intro in ['yes', 'y']:
         game_started()
