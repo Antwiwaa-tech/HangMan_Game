@@ -23,3 +23,15 @@ This is a simple Hangman game implemented in Python. The game selects a word fro
 - Displays a congratulatory message when the player guesses the word correctly.
 - Allows users to exit the game at any time by typing 'quit'.
 
+## How to Play
+1. The game randomly selects a word from a category.
+2. You are prompted to guess a letter.
+3. If the letter is in the word, it is revealed.
+4. If the letter is incorrect, you lose an attempt.
+5. You have a maximum of 7 incorrect guesses.
+6. Type `quit` to exit the game at any time.
+7. The game ends when you either guess the word correctly or exhaust all attempts.
+
+## Example Gameplay
+![alt text](game.png)
+![alt text](image-1.png)
